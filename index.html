@@ -154,8 +154,10 @@
     </header>
 
     <main class="max-w-screen-xl mx-auto md:py-32">
+
         <!-- deal of the day section  -->
-        <section class="container my-10 mx-4">
+
+        <section class="container p-2 my-10 ">
 
             <!-- deal details -->
             <div class="flex flex-col lg:flex-row justify-between items-center gap-5 ">
@@ -169,7 +171,7 @@
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
 
-                <div class="flex justify-evenly items-center gap-5">
+                <div class="flex justify-evenly items-center md:gap-5">
                     <div class="text-center">
                         <h2 class="font-extrabold md:text-5xl">29</h2>
                         <p class="text-clr-text">Days</p>
@@ -212,7 +214,7 @@
             </div>
 
             <!-- deal cards -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-6 md:mt-20">
 
                 <!-- first card -->
                 <div class="card border-2 bg-base-100  py-10">
@@ -222,9 +224,12 @@
                         </div>
                         <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
                     </div>
+
                     <hr class="w-3/5 mx-auto">
+
                     <div class="card-body space-y-2 text-center">
                         <p class="text-clr-text">Apples</p>
+
                         <div class="rating flex justify-center">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" checked />
@@ -232,20 +237,68 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                         </div>
-                        <p class="text-clr-primary">Details</p>
+                        <!-- modal -->
+
+                        <button class="btn btn-outline text-clr-primary"
+                            onclick="document.getElementById('modal_1').showModal()">Details</button>
+                        <dialog id="modal_1" class="modal">
+
+                            <!-- content start -->
+                            <div class="modal-box">
+                                <div class="card w-[300px] bg-base-100 shadow-2xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center space-y-2">
+                                        <h2 class="card-title">Apple</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.</p>
+
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                        </div>
+
+                                        <div class="card-actions">
+                                            <button class="btn bg-clr-primary text-white">Buy Now</button>
+                                            <button class="btn btn-outline btn-ghost text-clr-primary">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content end-->
+                            <form method="dialog" class="modal-backdrop">
+                                <button>close</button>
+                            </form>
+                        </dialog>
+
+                        <!-- modal ends -->
                     </div>
                 </div>
+
                 <!-- second card -->
-                <div class="card border-2 bg-[#FFF]  py-10">
+                <div class="card border-2 bg-base-100  py-10">
                     <div class="mx-auto space-y-2 mb-4">
-                        <div class=" rounded flex justify-center ">
-                            <img class=" " src="./images/fruit7.png" />
+                        <div class=" rounded flex justify-center">
+                            <img src="./images/fruit7.png" />
                         </div>
                         <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
                     </div>
+
                     <hr class="w-3/5 mx-auto">
+
                     <div class="card-body space-y-2 text-center">
                         <p class="text-clr-text">Oranges</p>
+
                         <div class="rating flex justify-center">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" checked />
@@ -253,9 +306,54 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                         </div>
-                        <p class="text-clr-primary">Details</p>
+                        <!-- modal -->
+
+                        <button class="btn btn-outline text-clr-primary"
+                            onclick="document.getElementById('modal_2').showModal()">Details</button>
+                        <dialog id="modal_2" class="modal">
+
+                            <!-- content start -->
+                            <div class="modal-box">
+                                <div class="card w-[300px] bg-base-100 shadow-2xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit7.png" alt="" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center space-y-2">
+                                        <h2 class="card-title">Orange</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.</p>
+
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                        </div>
+
+                                        <div class="card-actions">
+                                            <button class="btn bg-clr-primary text-white">Buy Now</button>
+                                            <button class="btn btn-outline btn-ghost text-clr-primary">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content end-->
+                            <form method="dialog" class="modal-backdrop">
+                                <button>close</button>
+                            </form>
+                        </dialog>
+
+                        <!-- modal ends -->
                     </div>
                 </div>
+
                 <!-- third card -->
                 <div class="card border-2 bg-base-100  py-10">
                     <div class="mx-auto space-y-2 mb-4">
@@ -264,9 +362,12 @@
                         </div>
                         <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
                     </div>
+
                     <hr class="w-3/5 mx-auto">
+
                     <div class="card-body space-y-2 text-center">
-                        <p class="text-clr-text">Dragons</p>
+                        <p class="text-clr-text">Dragon</p>
+
                         <div class="rating flex justify-center">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" checked />
@@ -274,10 +375,55 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                         </div>
-                        <p class="text-clr-primary">Details</p>
+                        <!-- modal -->
+
+                        <button class="btn btn-outline text-clr-primary"
+                            onclick="document.getElementById('modal_3').showModal()">Details</button>
+                        <dialog id="modal_3" class="modal">
+
+                            <!-- content start -->
+                            <div class="modal-box">
+                                <div class="card w-[300px] bg-base-100 shadow-2xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit8.png" alt="" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center space-y-2">
+                                        <h2 class="card-title">Dragon</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.</p>
+
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                        </div>
+
+                                        <div class="card-actions">
+                                            <button class="btn bg-clr-primary text-white">Buy Now</button>
+                                            <button class="btn btn-outline btn-ghost text-clr-primary">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content end-->
+                            <form method="dialog" class="modal-backdrop">
+                                <button>close</button>
+                            </form>
+                        </dialog>
+
+                        <!-- modal ends -->
                     </div>
                 </div>
                 <!-- fourth card -->
+
                 <div class="card border-2 bg-base-100  py-10">
                     <div class="mx-auto space-y-2 mb-4">
                         <div class=" rounded flex justify-center">
@@ -285,17 +431,64 @@
                         </div>
                         <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
                     </div>
+
                     <hr class="w-3/5 mx-auto">
+
                     <div class="card-body space-y-2 text-center">
                         <p class="text-clr-text">Bananas</p>
+
                         <div class="rating flex justify-center">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" checked />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary" />
                         </div>
-                        <p class="text-clr-primary">Details</p>
+                        <!-- modal -->
+
+                        <button class="btn btn-outline text-clr-primary"
+                            onclick="document.getElementById('modal_4').showModal()">Details</button>
+                        <dialog id="modal_4" class="modal">
+
+                            <!-- content start -->
+                            <div class="modal-box">
+                                <div class="card w-[300px] bg-base-100 shadow-2xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="/images/fruit9.png" alt="" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center space-y-2">
+                                        <h2 class="card-title">Banana</h2>
+                                        <p>Professional employees are there for you to pick the most amazing and fresh
+                                            fruits.</p>
+
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-clr-primary"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-clr-primary" />
+                                        </div>
+
+                                        <div class="card-actions">
+                                            <button class="btn bg-clr-primary text-white">Buy Now</button>
+                                            <button class="btn btn-outline btn-ghost text-clr-primary">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content end-->
+                            <form method="dialog" class="modal-backdrop">
+                                <button>close</button>
+                            </form>
+                        </dialog>
+
+                        <!-- modal ends -->
                     </div>
                 </div>
 
@@ -309,13 +502,112 @@
 
         <!-- team section -->
 
-        <section class="container my-10 mx-4">
+        <section class="my-10 p-2 md:p-14 relative space-y-4 "
+            style="background-image: url('./images/team.png'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+            <!-- Adjust the background image opacity -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            <!-- meet members -->
+            <div class="md:max-w-3xl mx-auto relative z-10 text-white py-4">
+
+                <div class="space-y-4 py-4 text-center ">
+                    <h3 class="text-2xl md:text-5xl font-extrabold">Meet the team section</h3>
+                    <p class="font-semibold">Contrary to popular belief, is not simply random text. It has roots in a
+                        piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-4 py-6">
+                    <!-- member 1 -->
+                    <div class="space-y-2 flex flex-col justify-center items-center">
+
+                        <div class="flex items-center justify-center">
+                            <img src="./images/member1.png" alt="" class="w-3/4">
+                        </div>
+                        <div class="text-center space-y-2">
+                            <h5 class="text-base font-semibold">Mr Hossain</h5>
+                            <p class="">Fruits Expert</p>
+                            <p>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-facebook text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-twitter text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-linkedin text-xl text-clr-primary m-1"></i></a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- member 2 -->
+                    <div class="space-y-2 flex flex-col justify-center items-center">
+
+                        <div class="flex items-center justify-center">
+                            <img src="./images/member2.png" alt="" class="w-3/4">
+                        </div>
+                        <div class="text-center space-y-2">
+                            <h5 class="text-base font-semibold">Safia</h5>
+                            <p class="">Fruits Expert</p>
+                            <p>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-facebook text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-twitter text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-linkedin text-xl text-clr-primary m-1"></i></a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- member 3 -->
+                    <div class="space-y-2 flex flex-col justify-center items-center">
+
+                        <div class="flex items-center justify-center">
+                            <img src="./images/member3.png" alt="" class="w-3/4">
+                        </div>
+                        <div class="text-center space-y-2">
+                            <h5 class="text-base font-semibold">Mr Ahmed</h5>
+                            <p class="">Fruits Expert</p>
+                            <p>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-facebook text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-twitter text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-linkedin text-xl text-clr-primary m-1"></i></a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- member 4 -->
+                    <div class="space-y-2 flex flex-col justify-center items-center">
+
+                        <div class="flex items-center justify-center">
+                            <img src="./images/member4.png" alt="" class="w-3/4">
+                        </div>
+                        <div class="text-center space-y-2">
+                            <h5 class="text-base font-semibold">Chaity</h5>
+                            <p class="">Fruits Expert</p>
+                            <p>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-facebook text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-twitter text-xl text-clr-primary m-1"></i></a>
+                                <a href=""><i
+                                        class="list-none fa-brands fa-linkedin text-xl text-clr-primary m-1"></i></a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
         <!-- Reasons to choose us -->
 
-        <section class="mx-2 py-10">
+        <section class="px-2 py-10">
             <div class="space-y-4 text-center ">
                 <h3 class="text-2xl md:text-5xl font-extrabold ">Why Choose Us</h3>
                 <p class=" font-semibold text-clr-text">Contrary to popular belief, is not simply random text. It
@@ -402,8 +694,6 @@
                                 most amazing
                                 and fresh fruits.</p>
                         </div>
-
-
                         <div class=" bg-[#1212121A] flex justify-center items-center w-6 h-6 p-6 rounded-full">
                             <i class="fa-regular fa-lemon"></i>
                         </div>
@@ -420,8 +710,6 @@
                                 most amazing
                                 and fresh fruits.</p>
                         </div>
-
-
                         <div class=" bg-[#1212121A] flex justify-center items-center w-6 h-6 p-6 rounded-full">
                             <i class="fa-solid fa-ice-cream"></i>
                         </div>
@@ -437,16 +725,12 @@
                                 most amazing
                                 and fresh fruits.</p>
                         </div>
-
-
                         <div class=" bg-[#1212121A] flex justify-center items-center w-6 h-6 p-6 rounded-full">
                             <i class="fa-regular fa-thumbs-up"></i>
                         </div>
 
                     </div>
-
                 </div>
-
             </div>
         </section>
 
@@ -470,6 +754,7 @@
             <a class="link link-hover ">Support</a>
             <a class="link link-hover ">My Account</a>
         </nav>
+
         <nav>
             <div class="flex justify-center flex-wrap gap-5">
 
@@ -482,6 +767,7 @@
 
             </div>
         </nav>
+
         <aside>
             <p>Copyright © 2023 - All right reserved</p>
         </aside>

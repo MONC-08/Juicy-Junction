@@ -59,7 +59,7 @@
     <header class="max-w-screen-xl mx-auto">
 
         <!-- navbar section -->
-        <nav class=" navbar bg-clr-primary rounded-full p-4">
+        <nav class=" navbar bg-clr-primary rounded-full md:p-4">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -103,26 +103,105 @@
             </div>
         </nav>
 
-        <!-- banner section -->
+        <!-- slider or carousel -->
         <section class="container mt-4 md:mt-10 relative">
 
-            <!-- intro. banner -->
-            <div class="bg-banner w-full h-full md:h-[400px] lg:h-[500px] bg-contain bg-center bg-no-repeat py-5">
+            <div class="carousel w-full ">
 
-                <div class="flex justify-center items-center text-center text-neutral-content">
-                    <div class="space-y-2">
-                        <h1 class="text-xl md:text-5xl font-extrabold md:mt-16 ">Exotic tastes at your <br>
-                            doorstep
-                        </h1>
-                        <p class="">We supply highly quality organic products</p>
-                        <button class="btn bg-clr-primary text-white">Shop Now</button>
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/images/banner1.png" class="w-full" />
+
+                    <div
+                        class="flex justify-center items-center text-center text-neutral-content absolute inset-x-[10%]  md:inset-x-[15%]">
+                        <div class="space-y-2 md:py-12">
+                            <h1 class="text-xl md:text-5xl font-extrabold md:mt-16 text-[#FFFFFF]">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-[#FFFFFF]">We supply highly quality organic products</p>
+                            <button class="btn bg-clr-primary text-[#FFFFFF]">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
+
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+
+                    <div
+                        class="flex justify-center items-center text-center text-neutral-content absolute inset-x-[10%]  md:inset-x-[15%]">
+                        <div class="space-y-2 md:py-10">
+                            <h1 class="text-xl md:text-5xl font-extrabold md:mt-16 text-[#FFFFFF]">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-[#FFFFFF]">We supply highly quality organic products</p>
+                            <button class="btn bg-clr-primary text-[#FFFFFF]">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full" />
+
+                    <div
+                        class="flex justify-center items-center text-center text-neutral-content absolute inset-x-[10%]  md:inset-x-[15%]">
+                        <div class="space-y-2 md:py-10">
+                            <h1 class="text-xl md:text-5xl font-extrabold md:mt-16 text-[#FFFFFF]">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-[#FFFFFF]">We supply highly quality organic products</p>
+                            <button class="btn bg-clr-primary text-[#FFFFFF]">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slider 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+
+                    <div
+                        class="flex justify-center items-center text-center text-neutral-content absolute inset-x-[10%]  md:inset-x-[15%]">
+                        <div class="space-y-2 md:py-10">
+                            <h1 class="text-xl md:text-5xl font-extrabold md:mt-16 text-[#FFFFFF]">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-[#FFFFFF]">We supply highly quality organic products</p>
+                            <button class="btn bg-clr-primary text-[#FFFFFF]">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- items here -->
+            <!-- slider or carousel end-->
 
-            <div class="absolute top-[105%] inset-x-0 bottom-0 hidden md:flex justify-center items-center ">
+            <!-- items here -->
+            <div class="absolute md:top-[100%] inset-x-0 bottom-0 hidden lg:flex justify-center items-center ">
 
                 <div class="grid grid-cols-5 gap-5  p-8 max-w-4xl rounded-lg bg-white">
 
